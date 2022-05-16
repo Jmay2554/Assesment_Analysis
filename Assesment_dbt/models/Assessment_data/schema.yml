@@ -1,0 +1,24 @@
+version: 2
+models: 
+  - name: monthconversions
+    config:
+      materialized: view
+  - name: weekconversions
+    config:
+      materialized: view
+  - name: dayconversions
+    config:
+      materialized: view
+    name: leadsource_day
+    config:
+      materialized: view
+    name: leadsource_week
+    config:
+      materialized: view
+    name: leadsource_month
+    config:
+      materialized: view
+    name: finalizedopps
+    config:
+      materialized: view
+    
